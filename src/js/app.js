@@ -1,11 +1,17 @@
-// TODO: write code here
+import { Game } from "./Game.js";
 
-// comment this to pass build
-const unusedVariable = "variable";
+export function bootstrap() {
+  const game = new Game({
+    fieldSelector: ".goblin_game",
+    hitSelector: "#hit",
+    missSelector: "#miss",
+    overlaySelector: "#overlay",
+    overlayTextSelector: "#overlay-text",
+    restartSelector: "#restart",
+    maxMiss: 5,
+    tick: 1000,
+  });
 
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
+  game.start();
+  return game;
 }
-
-console.log("app.js included");

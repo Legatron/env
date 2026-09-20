@@ -1,3 +1,79 @@
 body {
-    color: #999;
+  color: #944;
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #50C878;
+  border-radius: 12px;
+}
+
+.status {
+  margin-bottom: 20px;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.goblin_game {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text x="0" y="30" font-size="32">🔨</text></svg>') 6 6, pointer;
+}
+
+.hole {
+  width: 160px;
+  height: 160px;
+  margin: 0 15px 30px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.hole-goblin {
+  background-image: url('../img/goblin.png'), linear-gradient(red, yellow, green);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: brown;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.overlay__box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.restart {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #944;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }

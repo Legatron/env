@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>goblin_game</title>
 </head>
 <body>
-<h1>Hello, from Netology!</h1>
-<img src="img/netology.svg" alt="Netology Logo">
+  <main class="content">
+    <div class="card">
+      <div id="status" class="status">
+        Попаданий: <span id="hit">0</span><br>
+        Промахов: <span id="miss">0</span><br>
+      </div>
+
+      <div class="goblin_game"></div>
+    </div>
+  </main>
+
+  <div id="overlay" class="overlay" hidden>
+    <div class="overlay__box">
+      <p id="overlay-text">Игра окончена!</p>
+      <button id="restart" class="restart">Начать заново</button>
+    </div>
+  </div>
 </body>
 </html>
